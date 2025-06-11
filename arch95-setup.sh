@@ -4,16 +4,6 @@
 # Requires: sudo, internet connection
 
 # Check if running as root
-if [ "$(id -u)" -eq 0 ]; then
-    echo "Please run this script as a normal user, not as root."
-    exit 1
-fi
-
-# Check for sudo access
-if ! sudo -v; then
-    echo "You need sudo privileges to run this script."
-    exit 1
-fi
 
 # Update system first
 echo "Updating system..."
